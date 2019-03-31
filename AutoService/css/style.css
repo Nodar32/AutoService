@@ -1,0 +1,722 @@
+body
+{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+}
+.razvernut
+{
+    text-align: center;
+}
+a {
+	text-decoration: none;
+}
+.conteiner
+{
+    margin: 0 auto;
+    max-width: 1140px;
+    text-align: center;
+    overflow: hidden;
+}
+.flexR
+{
+    display: flex;
+    justify-content: space-between;
+}
+.flexC
+{
+    display: flex;
+    flex-direction: column;
+}
+section
+{
+    background-color: #141413;
+    padding-bottom: 30px;
+
+}
+span
+{
+    color: red;
+}
+#vverx
+{
+    cursor: pointer;
+    opacity: 0;
+    height: 5px;
+    width: 10px;
+    color:  #141413;
+    border-radius: 50%;
+    background-color: red;
+    text-align: center;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    transition: 1s;
+    z-index: 4;
+    
+}
+#vverx:hover
+{
+    cursor: default;
+    
+}
+#vverx i 
+{
+    font-size: 50px;
+    margin-top: 5px;
+}
+header
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 5;
+    background: url(../images/headerbg.jpg) no-repeat center top / cover;   
+    height: 100%;
+    transition: 2s;
+}
+#bg
+{
+    position: relative;
+}
+#bg:after
+{
+    content: '';
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   background-color: red;
+   z-index: 1;
+   opacity: 0.3;
+
+
+}
+#coordinati
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#adres
+{
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    z-index: 2;
+}
+#adres h2
+{
+    margin-bottom: 0;
+    padding-bottom: 0;
+    color: #d12f22;
+}
+#adres p
+{
+    margin-top: 0;
+    padding-top: 0;
+    margin-bottom: -5px;
+}
+#marker
+{
+    font-size: 55px;
+    margin-right: 10px;
+    color: #d12f22;
+}
+
+#nomer
+{
+    text-transform: uppercase;
+    z-index: 2;
+}
+#nomer h2
+{
+    margin-bottom: 0;
+}
+#nomer a
+{
+    color: #e5e5e5;
+    text-decoration: underline;
+    margin-top: 0;
+}
+
+.title
+{
+    position: relative;
+    font-size: 40px;
+    text-align: center;
+    padding-top: 100px;
+}
+.title img 
+{
+    position: absolute;
+    top:-70px;
+    left:450px;
+    z-index: 2;
+}
+#home
+{
+    
+    padding-bottom: 50px;
+    height: 100vh;
+}
+.menu
+{
+    display: none;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+    width: 40px;
+    height: 40px;
+    color: #ffffff;
+    font-size: 30px;
+    text-align: center;
+}
+#avtorizacia
+{
+    position: absolute;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    margin-right: 50px;
+    top: 0;
+    right: 0;
+    background-color: black;
+}
+#avtorizacia a
+{
+    color: white;\
+    
+}
+#avtorizacia a:hover
+{
+    color: red;
+}
+#navbg
+{
+    background-color: black;
+    transition: 1s;
+    border-top: 2px solid #2a2a2a;
+    border-bottom: 2px solid #2a2a2a;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 3;
+}
+#navbar
+{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#navbar li
+{
+    font-family: 'Roboto', sans-serif;
+    display: inline-block;
+    list-style-type: none;
+    text-transform: uppercase;
+    font-size: 15px;
+    color: #ffffff;
+    font-weight: bold;
+    transition: 0.8s;
+    padding: 0 10px;
+}
+#navbar li i
+{
+    margin-right: 5px;
+}
+#navbar a :hover
+{
+    color: red;
+    
+}
+#garantia
+{
+    display: flex;
+    align-items: center;
+    border: 3px solid #fff;
+    border-radius: 5px;
+    width: 180px;
+    height: 50px;
+}
+#garantia h1
+{
+    font-size: 40px;
+    padding: 0 5px;
+}
+#garantia h4
+{
+    font-size: 30px;
+}
+
+#garantia h6
+{
+    margin-left: 10px;
+    font-size: 15px;
+}
+#titleUslugi
+{
+    text-transform: uppercase;
+    margin-top: -50px;
+}
+
+.nazvanieUslugi
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #2a2a2a;
+    width: 350px;
+    height: 250px;
+    text-align: center;
+    padding: 0 20px;
+    padding-top: 30px;
+    text-decoration: underline;
+    text-transform: uppercase;
+    margin: 5px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    transition: 1s;
+}
+.nazvanieUslugi img
+{
+    width: 120px;
+    height: 100px;
+}
+.nazvanieUslugi h6
+{
+    display: none;
+    margin: 0px;
+    cursor: pointer;
+}
+
+
+.nazvanieUslugi:hover img
+{
+    animation-name: up;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+.nazvanieUslugi:hover p
+{
+    animation-name: down;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+.nazvanieUslugi:hover h6
+{
+    display: block;
+    animation-name: opacity;
+    animation-duration: 2.5s;
+    animation-fill-mode: forwards;
+}
+@keyframes down 
+{
+    0%{transform: translateY(0px);}
+    100%{transform: translateY(80px);}
+}
+@keyframes up
+{
+    0%{transform: translateY(0px);}
+    100%{transform: translateY(-160px);}
+}
+@keyframes opacity
+{
+    0%{opacity:0;}
+    100% 
+    {
+        opacity:1;
+        margin: 15px;
+    }
+}
+
+#zakazUslugi
+{
+    background-color: red;
+
+}
+
+#zakaz
+{
+    display: block;
+    margin: 0 auto;
+    color: #fff;
+    width: 150px;
+    text-align: center;
+    padding: 20px;
+    background-color: red;
+    border-radius: 5px;
+    text-transform: uppercase; 
+}
+
+
+
+
+
+.sectionTitle
+{
+    border-top: 2px solid #2a2a2a;
+    border-bottom: 2px solid #2a2a2a;
+    background-color: black;
+    text-align: center;
+    padding-top: 30px;
+    margin-bottom: 30px;
+}
+.moreTitle
+{
+    color:red;
+    font-size: 24px;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 20px;
+
+}
+.sectionTitle h1
+{
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: normal;
+    margin-top: 0;
+}
+.sectionTitle p
+{
+    font-size: 20px;
+}
+.markaimg
+{   
+    width: 100%;;
+    height: 100%;
+    border-radius: 10px;
+}
+.logoimg
+{
+    width: 260px;
+    transition: 1s;
+
+}
+
+
+
+
+.img
+{
+    width: 350px;
+    height: 180px;
+    border-radius: 10px;
+    
+}
+
+
+
+.wrapper {
+    display: inline-block;
+    margin: 15px 5px;
+    width: 350px;
+    height: 180px;
+    position: relative;
+    perspective: 1000px;
+    
+  }
+  .pered, .zad {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+    backface-visibility: hidden;
+    
+  }
+  .zad {
+      border: 2px solid #2a2a2a;
+      border-radius: 10px ;
+    transform: rotateX(180deg);
+  }
+  .wrapper:hover .pered {transform: rotateX(180deg);}
+  .wrapper:hover .zad {transform: rotateX(360deg);}
+
+
+
+
+.cicTitle
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 100px;
+    height: 10%;
+}
+.cicTitle i
+{
+    font-size: 40px;
+    color: #141413;
+    margin-bottom: 30px;
+    
+}
+.cicTitle p
+{
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+    color:#aca9ba;
+}
+.cicavatar
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.cicavatar h6
+{
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+.cicavatar p
+{
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    font-size: 13px;
+    margin-top: 10px;
+}
+.avatarList
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.avatarList img
+{
+    width: 150px;
+    height: 200px;
+    margin: 15px;
+    transition: 0.5s;
+    opacity: 0.3;
+    
+   
+}
+.avatarList i
+{
+    font-size: 50px;
+    color:#aca9ba;
+    cursor: pointer;
+
+}
+.avatarList i:hover
+{
+    color:red;   
+}
+
+.infoSlider
+{
+    display: none;
+}
+#onas
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#onas p
+{
+    max-width: 700px;
+}
+
+
+
+
+
+
+.conteinerPlusov
+{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    
+    
+}
+
+.conteinerPlusov p
+{
+    color:red;
+    font-size: 50px;
+    margin: 0;
+    text-align: left;
+}
+.conteinerPlusov h5
+{
+    text-align: left;
+    margin: 0;
+}
+
+.conteinerPlusov i
+{
+    color: red;
+    font-size: 100px;
+}
+
+.textPlusov
+{
+    margin-left: 5px;
+    width: 200px;
+    margin-left: 10px;
+}
+
+
+
+
+
+footer
+{
+
+    background-color: black;
+    padding: 20px;
+}
+footer h6
+{
+    font-family: 'Roboto', sans-serif;
+    font-size:15px;
+    color: #ffffff;
+    text-transform: uppercase;
+    padding-top: 25px;
+    margin: 0;
+}
+.footerText
+{
+    font-family: 'Roboto', sans-serif;
+    font-size:14px;
+    color:#aca9ba;
+    line-height: 30px;
+}
+
+.socialButton
+{
+    color: #ffffff;
+    margin: 0 2px;
+}
+
+
+
+
+
+.wrapper1 {
+    display: none;
+    border-radius: 10px;
+    width: 250px;
+    height: 300px;
+    position: relative;
+    perspective: 1000px;
+  }
+
+  .pered1, .zad1 {
+    border-radius: 10px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+    backface-visibility: hidden;
+    
+  }
+  .zad1 {
+    transform: rotateY(180deg);
+  }
+  .wrapper1:hover .pered1 {transform: rotateY(180deg);}
+  .wrapper1:hover .zad1 {transform: rotateY(360deg);}
+
+.anketa
+{
+    position: absolute;
+    left: 50%;
+    top:30%;
+	transform: translate(-50%);
+    z-index: 20;
+}
+
+.zad1
+{
+    background-color: black;
+}
+form
+{text-align: center;}
+form img
+{
+    height: 120px;
+    width:120px;
+    margin-bottom: -20px;
+    cursor: pointer;
+}
+form input
+{
+    border-radius: 5px;
+    border: none;
+    padding: 5px;
+}
+form button
+{
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 3px 5px;
+    background-color: #ccc;
+    border: none;
+    outline: none;
+}
+
+
+.pered1 img
+{
+    transition: 0.5s;
+    height: 2px;
+    width: 2px;
+}
+
+
+#remSlider
+{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 800px;
+    height: 500px;
+    overflow: hidden;
+    padding-right: 150px;
+    
+}
+#remSlider img
+{
+    margin-left: 200px;
+    transition: 1s;
+    width: 700px;
+}
+#remSlider img:last-child
+{
+    padding-left: 150px;
+}
+.razvernut
+{
+    display: none;
+}
